@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<title>Title</title>
+</head>
+
+<body>
+
+<p>This is an R HTML document. When you click the <b>Knit HTML</b> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+<!--begin.rcode
+## ARMAND KAPLLANI
+## ECO 7938 
+## Assignment I 
+
+rm(list=ls())
+
+##############################################################################
+# WRITING FUNCTIONS
+##############################################################################
+
+#1 Write a function that tests if a vector x is longer than a vector y.
+
+# Let x and y be two arbitrary vectors 
+
+x <- c(2,3,5,9,10)
+y <- c(3,2,1,2.3,5.9,16)
+
+test1 <- function(x,y){
+  ifelse(length(x) > length(y),'TRUE', 'FALSE')            ## TRUE if x > y and FALSE if x < y        
+}
+
+test1(x,y)
+
+##############################################################################
+end.rcode-->
+
+<p>You can also embed plots, for example:</p>
+
+
+
+</body>
+</html>
